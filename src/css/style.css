@@ -1,0 +1,157 @@
+root {
+  --primary-1: #f9a826;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+main {
+  background-color: #f9a826;
+}
+
+.color-primary {
+  color: #f9a826;
+}
+
+main header {
+  border-radius: 0 0 15px 15px;
+  padding: 5px;
+}
+
+main header p {
+  font-size: 22px;
+  font-weight: bolder;
+  text-align: center;
+}
+main header p span {
+  color: #f9a826;
+}
+
+.square {
+  height: 340px;
+  background-color: #e5e5e5;
+  border-radius: 15px;
+  margin-bottom: 80px;
+}
+
+.consult {
+  border-radius: 25px 25px 0 0;
+  transform: translateY(-20px);
+  position: relative;
+  text-align: center;
+  margin: auto 0;
+}
+.consult > p {
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+.consult > p:first-of-type {
+  margin-top: -34px;
+}
+.discount-box {
+  border: 3px solid #f9a826;
+  box-shadow: #63636333 0px 2px 8px 0px;
+  width: 79px;
+  height: 75px;
+  border-radius: 15px;
+  transform: translateY(-40px);
+}
+
+.discount-box .triangle-down {
+  text-align: center;
+  position: absolute;
+  bottom: -72%;
+  left: 39%;
+  display: block;
+  height: 50px; /* Height should be double border thickness */
+}
+
+.discount-box .triangle-down::before,
+.discount-box .triangle-down::after {
+  position: absolute;
+  display: block;
+  content: '';
+  border: 10px solid transparent; /* Adjust chevron size */
+}
+
+.discount-box .triangle-down::before {
+  top: 0;
+  border-top-color: #f9a826; /* Chevron Color */
+}
+
+.discount-box .triangle-down::after {
+  top: -3px; /* Adjust thickness */
+  border-top-color: white; /* Match chevron background color */
+}
+
+.discount-box p {
+  font-size: 1.5rem;
+  font-weight: bolder;
+  color: #f9a826;
+  line-height: 28px;
+}
+
+.form-wrapp label {
+  font-size: 9px;
+  position: absolute;
+  left: 53%;
+  top: -2%;
+  z-index: 1;
+}
+.form-wrapp label::after {
+  content: '';
+  background-color: white;
+  position: absolute;
+  top: 42%;
+  z-index: -1;
+  left: -18%;
+  width: 55px;
+  height: 5px;
+}
+
+input {
+  direction: rtl;
+  height: 45px;
+  border: 2px solid #ccc!important;
+}
+input:-moz-placeholder {
+  text-align: center;
+  font-size: 10px;
+}
+input:-ms-input-placeholder {
+  text-align: center;
+  font-size: 10px;
+}
+input::-webkit-input-placeholder {
+  text-align: center;
+  font-size: 10px;
+}
+
+::placeholder {
+  color: #ccc !important;
+
+  text-align: center;
+}
+
+.ct-btn{
+  background-color: #ef8800;
+  color: white;
+  font-weight: bolder;
+  font-size: 1.25rem;
+}
+
+.box-wrap .box{
+  width: 60px;
+  height: 60px;
+  background-color: #e0e0e0;
+}
+
+.box-wrap img{
+  top: -9px;
+}
+
+.box-wrap p{
+  font-size: 12px;
+  font-weight: bolder;
+}
